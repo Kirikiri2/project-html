@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+}
+
+.top-slice {
+    background-color: #F3F5F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 16px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.content p {
+    color: #000000;
+}
+
+.top-slice a {
+    color: #377DFF;
+    align-content: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: flex;
+    align-items: center;
+}
+
+.close {
+    margin-left: auto;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.nav-bar .home {
+    color: #000000;
+}
+
+.title {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.grey {
+    color: #6C7275;
+    font-weight: 500;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 14px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #6C7275;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.shop-bag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.button2 {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.button1 img {
+    width: 100%;
+}
+
+.point {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 0 40px 0;
+}
+
+.title2 {
+    font-size: 72px;
+    text-wrap: nowrap;
+    font-weight: 500;
+    line-height: 76px;
+}
+
+.textp {
+    font-size: 16px;
+    max-width: 453px;
+}
+
+.card {
+    display: flex;
+    max-width: 1120px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.small-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.small-card1 {
+    position: relative;
+}
+
+.small-card2 {
+    position: relative;
+}
+
+.placeholder {
+    position: relative;
+}
+
+.text-card1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+
+.Shopnow {
+    color: #000000;
+    text-decoration: underline;
+    text-underline-position: under;
+    align-content: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.room {
+    font-size: 34px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.text-card2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 201px;
+    left: 32px;
+}
+
+.text-card3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 201px;
+    left: 32px;
+}
+
+.title-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 48px 0 48px 0;
+}
+
+.titlecatalog {
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 44px;
+}
+
+.catalog-card {
+    display: flex;
+    gap: 24px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.range-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-range {
+    -webkit-appearance: none;
+    width: 1120px;
+    /* Длина ползунка */
+    height: 6px;
+    /* Толщина линии */
+    background: #e0e0e0;
+    /* Цвет линии */
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Стили для ручки ползунка в виде линии */
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 834px;
+    /* Длина ручки */
+    height: 6px;
+    /* Толщина ручки */
+    background: black;
+    /* Цвет ручки */
+    border-radius: 3px;
+    /* Закруглённые края */
+    cursor: pointer;
+}
+
+.slider-range::-moz-range-thumb {
+    width: 834px;
+    /* Длина ручки */
+    height: 6px;
+    /* Толщина ручки */
+    background: black;
+    /* Цвет ручки */
+    border-radius: 3px;
+    /* Закруглённые края */
+    cursor: pointer;
+}
