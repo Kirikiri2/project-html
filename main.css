@@ -258,44 +258,32 @@ body {
 .range-slider {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 48px 0 48px 0;
 }
 
 .slider-range {
     -webkit-appearance: none;
     width: 1120px;
-    /* Длина ползунка */
-    height: 6px;
-    /* Толщина линии */
-    background: #e0e0e0;
-    /* Цвет линии */
-    border-radius: 5px;
+    height: 4px;
+    background: #E8ECEF;
+    border-radius: 80px;
     outline: none;
     cursor: pointer;
 }
 
-/* Стили для ручки ползунка в виде линии */
 .slider-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 834px;
-    /* Длина ручки */
-    height: 6px;
-    /* Толщина ручки */
-    background: black;
-    /* Цвет ручки */
-    border-radius: 3px;
-    /* Закруглённые края */
+    height: 4px;
+    background: #343839;
+    border-radius: 80px;
     cursor: pointer;
 }
 
 .slider-range::-moz-range-thumb {
     width: 834px;
-    /* Длина ручки */
-    height: 6px;
-    /* Толщина ручки */
-    background: black;
-    /* Цвет ручки */
-    border-radius: 3px;
-    /* Закруглённые края */
+    height: 4px;
+    background: #343839;
+    border-radius: 80px;
     cursor: pointer;
 }
