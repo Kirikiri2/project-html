@@ -15,6 +15,13 @@ body {
 
 }
 
+.banner,
+.navigation,
+.frame {
+    padding: 0 32px;
+}
+
+
 .top-slice {
     background-color: #F3F5F7;
     display: flex;
@@ -32,7 +39,7 @@ body {
 }
 
 .content p {
-    color: #000000;
+    color: #141718;
 }
 
 .top-slice a {
@@ -57,11 +64,11 @@ body {
 }
 
 .nav-bar .home {
-    color: #000000;
+    color: #141718;
 }
 
 .title {
-    color: #000000;
+    color: #141718;
     font-weight: 500;
     text-decoration: none;
     font-size: 24px;
@@ -85,7 +92,7 @@ body {
     color: #6C7275;
 }
 
-.images {
+.icon-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,12 +104,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-}
-
-.banner,
-.navigation,
-.frame {
-    padding: 0 32px;
 }
 
 .slider {
@@ -117,10 +118,6 @@ body {
     position: relative;
 }
 
-.slide img {
-    width: 100%;
-}
-
 .button1 {
     position: absolute;
     top: 50%;
@@ -133,10 +130,6 @@ body {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
-
-.button1 img {
-    width: 100%;
 }
 
 .point {
@@ -204,7 +197,7 @@ body {
 }
 
 .Shopnow {
-    color: #000000;
+    color: #141718;
     text-decoration: underline;
     text-underline-position: under;
     align-content: center;
@@ -217,7 +210,7 @@ body {
 .room {
     font-size: 34px;
     text-decoration: none;
-    color: #000000;
+    color: #141718;
     font-weight: 500;
 }
 
@@ -245,14 +238,14 @@ body {
     align-items: last baseline;
     max-width: 1120px;
     margin: 0 auto;
-    padding: 48px 0 48px 0;
+    padding: 48px 0;
 }
 
 .titlecatalog {
     font-weight: 500;
     font-size: 40px;
     text-decoration: none;
-    color: #000000;
+    color: #141718;
     line-height: 44px;
 }
 
@@ -262,6 +255,90 @@ body {
     max-width: 1120px;
     margin: 0 auto;
 }
+
+.catalog-text button {
+    display: flex;
+    gap: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    padding-top: 12px;
+}
+
+.catalog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.catalog-card-with-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-text-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #141718;
+    text-decoration: none;
+}
+
+.prices {
+    display: flex;
+    gap: 12px;
+}
+
+.price-now {
+    text-decoration: none;
+    color: #141718;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 550;
+}
+
+.price-befor {
+    color: #6C7275;
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.catalog-img {
+    position: relative;
+}
+
+.catalog-img button {
+    border: none;
+}
+
+.buttons-line {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    top: 16px;
+    left: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.new {
+    background-color: #FFFFFF;
+    color: #141718;
+    padding: 4px 14px;
+    border-radius: 4px;
+}
+
+.sale {
+    background-color: #38CB89;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 4px;
+}
+
 
 .range-slider {
     display: flex;
@@ -315,7 +392,7 @@ body {
 .smtext-1 {
     line-height: 28px;
     text-decoration: none;
-    color: #000000;
+    color: #141718;
     font-weight: 500;
     font-size: 20px;
 }
@@ -367,6 +444,10 @@ body {
     display: flex;
     align-items: center;
     line-height: 16px;
+}
+
+.article {
+    padding: 80px 0 40px 0;
 }
 
 .images-art {
