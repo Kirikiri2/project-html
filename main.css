@@ -99,6 +99,12 @@ body {
     gap: 5px;
 }
 
+.banner,
+.navigation,
+.frame {
+    padding: 0 32px;
+}
+
 .slider {
     display: flex;
     justify-content: center;
@@ -192,6 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
+    gap: 12px;
     top: 48px;
     left: 48px;
 }
@@ -205,7 +212,6 @@ body {
     text-underline-position: under;
     display: flex;
     align-items: center;
-    margin-top: 12px;
 }
 
 .room {
@@ -219,6 +225,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
+    gap: 12px;
     top: 201px;
     left: 32px;
 }
@@ -227,6 +234,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
+    gap: 12px;
     top: 201px;
     left: 32px;
 }
@@ -289,11 +297,11 @@ body {
 }
 
 .advice {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
     max-width: 1120px;
     margin: 0 auto;
-    justify-content: space-between;
     padding: 0 0 48px 0;
 }
 
@@ -304,33 +312,61 @@ body {
     padding: 48px 32px;
 }
 
-.smtext {
+.smtext-1 {
     line-height: 28px;
     text-decoration: none;
     color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.smtext-2 {
+    line-height: 24px;
+    text-decoration: none;
+    color: #6C7275;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .baner2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
 }
 
-.baner2 img {
+.image-baner {
     width: 100%;
 }
 
 .block-baner {
-    display: flex;
-    flex-direction: column;
     background-color: #F3F5F7;
     width: 100%;
-    align-items: center;
 }
 
-.block-baner a {
+.text-banner {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin: 140px auto auto 72px;
+    max-width: 452px;
+}
+
+.regular-text {
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #141718;
+}
+
+
+.sale-up {
+    color: #377DFF;
+    align-content: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: flex;
+    align-items: center;
+    line-height: 16px;
 }
 
 .images-art {
@@ -365,4 +401,15 @@ body {
 
 .footer {
     background-color: #141718;
+}
+
+@media(max-width: 900px) {
+    .frame {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
 }
