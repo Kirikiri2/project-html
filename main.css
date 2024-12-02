@@ -287,3 +287,82 @@ body {
     border-radius: 80px;
     cursor: pointer;
 }
+
+.advice {
+    display: flex;
+    gap: 24px;
+    max-width: 1120px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 0 48px 0;
+}
+
+.greycard {
+    background-color: #F3F5F7;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 32px;
+}
+
+.smtext {
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.baner2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.baner2 img {
+    width: 100%;
+}
+
+.block-baner {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F5F7;
+    width: 100%;
+    align-items: center;
+}
+
+.block-baner a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.images-art {
+    display: flex;
+    max-width: 1120px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.images-art-img {
+    padding-bottom: 24px;
+}
+
+.images-art-a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 28px;
+}
+
+.article {
+    padding-bottom: 80px;
+}
+
+.img-email {
+    max-width: 100%;
+}
+
+.img-email img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #141718;
+}
