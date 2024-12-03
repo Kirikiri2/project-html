@@ -514,10 +514,32 @@ body {
 
 .img-email {
     max-width: 100%;
+    position: relative;
+}
+
+.img-email input {
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/icon/email.svg) no-repeat;
 }
 
 .img-email img {
     width: 100%;
+}
+
+.paragraf {
+    text-decoration: none;
+}
+
+.title-email {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 101px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 .footer {
