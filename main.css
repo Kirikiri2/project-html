@@ -249,6 +249,11 @@ body {
     line-height: 44px;
 }
 
+.catalog {
+    overflow: hidden;
+}
+
+
 .catalog-card {
     display: flex;
     gap: 24px;
@@ -310,19 +315,46 @@ body {
 }
 
 .catalog-img button {
+    cursor: pointer;
+}
+
+.buttons-line button {
+    border: none;
+}
+
+.hover-buttons-1 {
+    display: none;
+    position: absolute;
+    background-color: #141718;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.04px;
+    padding: 9px 74px;
+    border-radius: 8px;
+    bottom: 16px;
+    left: 16px;
+}
+
+.hover-buttons-2 {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: none;
     border: none;
 }
 
 .buttons-line {
-    position: absolute;
+
     display: flex;
     flex-direction: column;
     gap: 8px;
-    top: 16px;
-    left: 16px;
 }
 
 .new {
+    position: absolute;
     background-color: #FFFFFF;
     color: #141718;
     padding: 4px 14px;
@@ -330,9 +362,12 @@ body {
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
+    top: 16px;
+    left: 16px;
 }
 
 .sale {
+    position: absolute;
     background-color: #38CB89;
     color: #fff;
     padding: 4px 14px;
@@ -340,6 +375,8 @@ body {
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
+    top: 48px;
+    left: 16px;
 }
 
 
@@ -485,6 +522,16 @@ body {
 
 .footer {
     background-color: #141718;
+}
+
+.catalog-img:hover {
+    .hover-buttons-1 {
+        display: inline;
+    }
+
+    .hover-buttons-2 {
+        display: inline;
+    }
 }
 
 @media(max-width: 900px) {
