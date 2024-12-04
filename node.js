@@ -10,6 +10,6 @@ rangeInput.addEventListener('input', (event) => {
 
 document.querySelectorAll(".clickable").forEach(link => {
   link.addEventListener("click", () => {
-    document.getElementById("email-input").focus();
+    document.getSelector("email-input").focus();
   });
 });

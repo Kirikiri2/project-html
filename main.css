@@ -39,6 +39,7 @@ body {
 }
 
 .content p {
+    font-family: "Inter", sans-serif;
     color: #141718;
 }
 
@@ -64,6 +65,7 @@ body {
 }
 
 .nav-bar .home {
+    font-family: "Space Grotesk", sans-serif;
     color: #141718;
 }
 
@@ -157,6 +159,7 @@ body {
 }
 
 .textp {
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     max-width: 453px;
 }
@@ -197,10 +200,8 @@ body {
 }
 
 .Shopnow {
+    font-family: "Inter", sans-serif;
     color: #141718;
-    text-decoration: underline;
-    text-underline-position: under;
-    align-content: center;
     text-decoration: underline;
     text-underline-position: under;
     display: flex;
@@ -277,6 +278,7 @@ body {
 }
 
 .catalog-card-with-text {
+    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -299,7 +301,7 @@ body {
     color: #141718;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .price-befor {
@@ -328,9 +330,10 @@ body {
     background-color: #141718;
     border: none;
     color: #FFFFFF;
+    font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    letter-spacing: -0.04px;
+    letter-spacing: -0.4px;
     padding: 9px 74px;
     border-radius: 8px;
     bottom: 16px;
@@ -347,10 +350,13 @@ body {
 }
 
 .buttons-line {
-
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.catalog-img button {
+    font-family: "Inter", sans-serif;
 }
 
 .new {
@@ -361,22 +367,15 @@ body {
     border-radius: 4px;
     font-size: 16px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 700;
     top: 16px;
     left: 16px;
 }
 
 .sale {
-    position: absolute;
     background-color: #38CB89;
     color: #fff;
-    padding: 4px 14px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 500;
     top: 48px;
-    left: 16px;
 }
 
 
@@ -468,6 +467,7 @@ body {
 }
 
 .regular-text {
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     line-height: 32px;
     font-size: 20px;
@@ -477,6 +477,8 @@ body {
 
 
 .sale-up {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     color: #377DFF;
     align-content: center;
     text-decoration: underline;
@@ -528,7 +530,11 @@ body {
 }
 
 .paragraf {
+    font-family: "Inter", sans-serif;
     text-decoration: none;
+    color: #141718;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .title-email {
@@ -541,6 +547,24 @@ body {
     gap: 8px;
     align-items: center;
 }
+
+.email input {
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    background: url(/img/icon/email.svg) no-repeat left center;
+    bottom: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: #F2F4F6;
+    border-bottom-color: #141718;
+}
+
+::placeholder {
+    padding: 2px 32px;
+}
+
 
 .footer {
     background-color: #141718;
