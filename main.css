@@ -674,6 +674,28 @@ footer {
     }
 }
 
+.bread-crop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1120px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.bread-crop img {
+    padding: 0 4px;
+}
+
+.bread-crop a {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C7275;
+    text-decoration: none;
+}
+
 @media(max-width: 900px) {
     .frame {
         display: flex;
