@@ -254,7 +254,6 @@ body {
     overflow: hidden;
 }
 
-
 .catalog-card {
     display: flex;
     gap: 24px;
@@ -514,57 +513,106 @@ body {
     padding-bottom: 80px;
 }
 
-.img-email {
-    max-width: 100%;
-    position: relative;
-}
-
 .img-email input {
-    display: flex;
-    justify-content: center;
-    background-image: url(/img/icon/email.svg) no-repeat;
+    background: url(/img/icon/email.svg) no-repeat;
 }
 
-.img-email img {
+.email-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.email-banner img {
     width: 100%;
 }
 
+.pos {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .paragraf {
+    position: absolute;
     font-family: "Inter", sans-serif;
     text-decoration: none;
     color: #141718;
     font-size: 18px;
     line-height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.title-email {
+.title-email-all {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 101px;
+    top: 28%;
+    bottom: 72%;
+}
+
+.title-email {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: center;
 }
 
-.email input {
-    position: absolute;
+.email-input {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 28px;
-    background: url(/img/icon/email.svg) no-repeat left center;
-    bottom: 105px;
+    border: none;
+    width: 100%;
+}
+
+.email-input input {
+    background: url(/img/icon/email.svg) no-repeat scroll 0;
+    padding: 0 60px 0 32px;
+}
+
+.email-input input::placeholder {
+    padding-right: 2rem;
+}
+
+.email input:focus {
+    outline: none;
+}
+
+.email-f {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-color: #F2F4F6;
-    border-bottom-color: #141718;
+    top: 71%;
+    bottom: 29%;
 }
 
-::placeholder {
-    padding: 2px 32px;
+.email-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    max-width: 488px;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #6c727585;
+    padding: 12px 0px;
 }
 
+.email-form a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #6C7275;
+}
 
 .footer {
     background-color: #141718;
@@ -586,7 +634,5 @@ body {
         flex-direction: column;
         gap: 10px;
     }
-
-
 
 }

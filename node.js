@@ -7,9 +7,3 @@ rangeInput.addEventListener('input', (event) => {
   const offset = -(value * itemWidth);
   sliderContainer.style.transform = `translateX(${offset}px)`;
 });
-
-document.querySelectorAll(".clickable").forEach(link => {
-  link.addEventListener("click", () => {
-    document.getSelector("email-input").focus();
-  });
-});
