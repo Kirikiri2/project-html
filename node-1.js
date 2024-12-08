@@ -1,3 +1,4 @@
+/*слайдер*/
 const sliderContainer = document.querySelector('.catalog-card');
 const rangeInput = document.querySelector('.slider-range');
 
