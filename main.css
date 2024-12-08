@@ -1126,6 +1126,38 @@ footer {
     margin: 0 auto;
 }
 
+.banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.filter-and-catalog {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.catalod-big {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px 24px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Show-more {
+    display: flex;
+    justify-content: center;
+}
 
 @media(max-width: 900px) {
     .frame {
