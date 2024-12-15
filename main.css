@@ -4,15 +4,20 @@
     padding: 0;
 }
 
-p {
-    margin-bottom: 0;
-}
-
 body {
     background-color: #ffff;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+}
 
+.navigation,
+.banner,
+.frame,
+.card,
+.advice,
+.article {
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .top-slice {
@@ -21,6 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 11px 16px;
+    max-width: 100%;
 }
 
 .content {
@@ -34,11 +40,21 @@ body {
 .content p {
     font-family: "Inter", sans-serif;
     color: #141718;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
-.top-slice a {
+.top-slice {
+    display: flex;
+    align-items: center;
+}
+
+.blue-shop {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
     color: #377DFF;
-    align-content: center;
     text-decoration: underline;
     text-underline-position: under;
     display: flex;
@@ -49,6 +65,12 @@ body {
     margin-left: auto;
 }
 
+.close-icon {
+    display: flex;
+    align-items: center;
+}
+
+
 .bar {
     display: flex;
     align-items: center;
@@ -57,7 +79,19 @@ body {
     margin: 0 auto;
 }
 
-.nav-bar .home {
+.text-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.nav-bar,
+.home,
+.Shopnowcard {
     font-family: "Space Grotesk", sans-serif;
     color: #141718;
 }
@@ -113,6 +147,11 @@ body {
     position: relative;
 }
 
+.slide img {
+    width: 100%;
+    max-width: 100%;
+}
+
 .button1 {
     position: absolute;
     top: 50%;
@@ -140,7 +179,8 @@ body {
     align-items: center;
     max-width: 1120px;
     margin: 0 auto;
-    padding: 32px 0 40px 0;
+    padding-top: 32px;
+    padding-bottom: 40px;
 }
 
 .title2 {
@@ -153,6 +193,8 @@ body {
 .textp {
     font-family: "Inter", sans-serif;
     font-size: 16px;
+    line-height: 26px;
+    color: #6C7275;
     max-width: 453px;
 }
 
@@ -162,6 +204,11 @@ body {
     max-width: 1120px;
     margin: 0 auto;
     gap: 24px;
+}
+
+.images {
+    width: 100%;
+    max-width: 100%;
 }
 
 .small-card {
@@ -192,6 +239,15 @@ body {
     left: 9%;
 }
 
+.Shopnowcard {
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: flex;
+    align-items: center;
+}
+
 .Shopnow {
     font-family: "Inter", sans-serif;
     color: #141718;
@@ -203,21 +259,17 @@ body {
 
 .room {
     font-size: 34px;
+    line-height: 38px;
     text-decoration: none;
     color: #141718;
     font-weight: 500;
 }
 
-.text-card2 {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    gap: 12px;
-    top: 59%;
-    left: 7%;
+.bedroom2 {
+    display: none;
 }
 
-.text-card3 {
+.text-card {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -527,33 +579,24 @@ body {
     padding-bottom: 80px;
 }
 
+.email {
+    background-image: url(/img/bacground-img/emailbanner2.svg);
+}
+
 .email-banner {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 101px auto;
 
-.email-banner img {
-    width: 100%;
-}
-
-.paragraf-1 {
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .paragraf-2 {
-    position: absolute;
     font-family: "Inter", sans-serif;
     text-decoration: none;
     color: #141718;
     font-size: 18px;
     line-height: 30px;
-    top: 41%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .email-form input {
@@ -571,10 +614,6 @@ body {
 }
 
 .email-form {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 25%;
     display: grid;
     grid-template-columns: 9fr 1fr;
     max-width: 488px;
@@ -1085,7 +1124,7 @@ footer {
     color: #FFFFFF;
     border-radius: 80px;
     font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 28px;
 }
@@ -1095,6 +1134,19 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 40px 0;
+}
+
+.opt {
+    color: #141718;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 14px 141px 14px 16px;
+    border-style: solid;
+    border-color: #E8ECEF;
+    border-width: 1.8px;
+    border-radius: 16px;
 }
 
 .review-all {
@@ -1118,12 +1170,64 @@ footer {
     gap: 16px;
 }
 
+.review-top-bar {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.grey-title {
+    text-decoration: none;
+    color: #6C7275;
+}
+
+.reiew-main-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+}
+
+.customer {
+    padding-bottom: 24px;
+}
+
+.avatar-name {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.review-text-grey {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C7275;
+}
+
 .but-more {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1120px;
-    margin: 0 auto;
+    margin: 24px auto 40px;
+
+}
+
+.but-more button {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 6px 40px;
+    border-radius: 80px;
+    border-style: solid;
+    border-color: #141718;
+    border-width: 1.8px;
+    cursor: pointer;
 }
 
 .banner-img {
@@ -1159,11 +1263,126 @@ footer {
     justify-content: center;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 950px) {
+    .title2 {
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+    .text-card {
+        gap: 8px;
+        top: 49%;
+    }
+
+    .Shopnowcard {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width:880px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+@media (max-width:770px) {
+    .title2 {
+        font-size: 50px;
+        line-height: 54px;
+    }
+}
+
+
+@media (max-width:650px) {
+
+    .search-icon,
+    .avatar-icon,
+    .nav-bar,
+    .blue-shop,
+    .button1,
+    .button2 {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .title2 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+
+}
+
+@media (max-width:600px) {
     .frame {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        align-items: center;
     }
 
+    .textp {
+        max-width: 310px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+@media (max-width:550px) {
+
+    .navigation,
+    .banner,
+    .frame,
+    .card,
+    .advice,
+    .article,
+    .top-slice,
+    .banner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:450px) {
+    .room {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+}
+
+@media (max-width:350px) {
+    .title2 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .bedroom {
+        display: none;
+    }
+
+    .bedroom2 {
+        display: inline;
+    }
+
+    .text-card {
+        top: 35%;
+    }
+
+    .text-card-1 {
+        top: 18%;
+    }
 }
