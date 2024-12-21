@@ -1077,6 +1077,11 @@ footer {
     border-width: 1.8px;
     border-radius: 8px;
     grid-area: f;
+    transition: background-color 0.3s ease;
+}
+
+.wish:hover {
+    background-color: #377DFF;
 }
 
 .high-line-button {
@@ -1377,6 +1382,12 @@ footer {
     cursor: pointer;
 }
 
+.banner {
+    position: relative;
+    text-align: center;
+    color: #000;
+}
+
 .banner-img {
     display: flex;
     align-items: center;
@@ -1384,6 +1395,54 @@ footer {
     max-width: 1120px;
     margin: 0 auto;
     padding-bottom: 60px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bread-crop-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.bread-crop-banner a {
+    text-decoration: none;
+}
+
+.banner-home {
+    color: #6C7275;
+}
+
+.black-banner-shop {
+    color: #141718;
+}
+
+.bread-crop-banner img {
+    padding: 0 4px;
+}
+
+.banner-content h1 {
+    font-size: 54px;
+    line-height: 58px;
+    margin: 24px auto;
+    font-weight: 500;
+}
+
+.banner-content p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 .filter-and-catalog {
@@ -1400,14 +1459,172 @@ footer {
 }
 
 .filter {
+    max-width: 250px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.filter-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.filter-title img {
+    width: 16px;
+    height: 16px;
+}
+
+.living-room-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0;
+    margin-left: 217px;
+}
+
+.living-room-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.living-room-sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.living-room-sort-label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    border: none;
+}
+
+.living-room-view-icons {
+    display: flex;
+}
+
+.living-room-icon {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.living-room-icon img {
+    width: 30px;
+}
+
+.living-room-icon:hover img {
+    filter: brightness(0.8);
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.categorize-options a {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.categorize-options a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.categorize-options a.active {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.price-options label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.price-options input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #a5a5ab;
+    border-radius: 4px;
+}
+
+.price-options input[type="checkbox"]:checked {
+    background-color: #000;
+}
+
+.categorize-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 228px;
+    overflow-y: auto;
+    padding-right: 147px;
+}
+
+.price-options {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.catalog-with-button {
+    display: flex;
+    flex-direction: column;
 }
 
 .Show-more {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.Show-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Show-more button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
 }
 
 @media(max-width: 1160px) {
@@ -1428,7 +1645,8 @@ footer {
     .review,
     .product-card,
     .bread-crop,
-    footer {
+    .section-header,
+    .filter-and-catalog footer {
         padding-left: 32px;
         padding-right: 32px;
     }
