@@ -30,12 +30,12 @@
         <section class="advert">
             <div class="top-slice">
                 <div class="content">
-                    <img src="/img/icon/ticket-percent.svg" alt="icon ticket">
+                    <img class="ticket-icon" src="/img/icon/ticket-percent.svg" alt="icon ticket">
                     <p>30% off storewide — Limited time!</p>
-                    <a href="#">Shop Now <img class="arrow" src="/img/icon/arrow-right.svg" alt="icon"></a>
+                    <a class="blue-shop" href="#">Shop Now <img src="/img/icon/arrow-right.svg" alt="icon"></a>
                 </div>
                 <div class="close">
-                    <a href="#"><img src="/img/icon/close.svg" alt="close"></a>
+                    <a href="#"><img class="close-icon" src="/img/icon/close.svg" alt="close"></a>
                 </div>
             </div>
         </section>
@@ -43,17 +43,18 @@
         <section class="navigation">
             <div class="bar">
                 <div class="text-all">
+                    <img class="burger-menu" src="/img/icon/menu-line-horizontal.svg" alt="">
                     <a href="#" class="title">3legant<span class="grey">.</span></a>
                 </div>
                 <nav class="nav-bar">
-                    <a class="home" href="#">Home</a>
-                    <a href="/3str.html">Shop</a>
-                    <a href="#">Product</a>
-                    <a href="#">Contact Us</a>
+                    <a class=" nav-bar-a home" href="#">Home</a>
+                    <a class="nav-bar-a" href="/3str.html">Shop</a>
+                    <a class="nav-bar-a" href="#">Product</a>
+                    <a class="nav-bar-a" href="#">Contact Us</a>
                 </nav>
                 <div class="icon-nav">
-                    <a href="#"><img src="/img/icon/search 02.svg" alt="search"></a>
-                    <a href="#"><img src="/img/icon/user-circle.svg" alt="avatar"></a>
+                    <a class="search-icon" href="#"><img src="/img/icon/search 02.svg" alt="search"></a>
+                    <a class="avatar-icon" href="#"><img src="/img/icon/user-circle.svg" alt="avatar"></a>
                     <div class="shop-bag">
                         <a href="#"><img src="/img/icon/shopping bag.svg" alt="shop"></a>
                         <a href="#"><img src="/img/icon/number2.svg" alt="count"></a>
@@ -138,14 +139,18 @@
                     <p class="color c3" id="text3">Red</p>
                     <p class="color c4" id="text4">Brown</p>
                     <div class="mini-chair-color">
-                        <button id="button1" class="focus-button"><img
-                                src="/img/bacground-img/Mini-chair-color-black.svg" alt=""></button>
-                        <button id="button2" class="focus-button"><img
-                                src="/img/bacground-img/Mini-chair-color-sandy.svg" alt=""></button>
-                        <button id="button3" class="focus-button"><img src="/img/bacground-img/Mini-chair-color-red.svg"
-                                alt=""></button>
-                        <button id="button4" class="focus-button"><img
-                                src="/img/bacground-img/Mini-chair-color-none.svg" alt=""></button>
+                        <div class="mini-chair-1">
+                            <button id="button1" class="focus-button"><img
+                                    src="/img/bacground-img/Mini-chair-color-black.svg" alt=""></button>
+                            <button id="button2" class="focus-button"><img
+                                    src="/img/bacground-img/Mini-chair-color-sandy.svg" alt=""></button>
+                        </div>
+                        <div class="mini-chair-2">
+                            <button id="button3" class="focus-button"><img
+                                    src="/img/bacground-img/Mini-chair-color-red.svg" alt=""></button>
+                            <button id="button4" class="focus-button"><img
+                                    src="/img/bacground-img/Mini-chair-color-none.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
                 <div class="button-for-choise">
@@ -185,6 +190,21 @@
                 <a class="grey-title" href="#">Additional Info</a>
                 <a class="grey-title" href="#">Questions</a>
                 <a class="Shopnow" href="#">Reviews</a>
+                <select class="opt-1" name="options">
+                    <option value="option1">Additional Info</option>
+                    <option value="option2">Questions</option>
+                    <option value="option3">Reviewst</option>
+                </select>
+                <select class="opt-2" name="options">
+                    <option value="option1">Questions</option>
+                    <option value="option2">Additional Info</option>
+                    <option value="option3">Reviewst</option>
+                </select>
+                <select class="opt-3" name="options">
+                    <option value="option1">Reviewst</option>
+                    <option value="option2">Questions</option>
+                    <option value="option3">Additional Info</option>
+                </select>
             </div>
             <div class="review-title">
                 <p class="reiew-main-title customer">Customer Reviews</p>
@@ -197,12 +217,16 @@
                         <img src="/img/icon/Star Icon-2.svg" alt="">
                     </button>
                     <p class="rate-p">11 Reviews</p>
+
+                </div>
+                <div class="none-title">
                     <p class="title-neez">Tray Table</p>
                 </div>
             </div>
             <div class="input-review">
-                <input type="text">
-                <button>Write Review</button>
+                <input type="text" placeholder="Share your thoughts">
+                <button class="button-word">Write Review</button>
+                <button class="button-arrow"><img src="/img/icon/white-arrow.svg" alt=""></button>
             </div>
             <div class="title-review">
                 <p class="reiew-main-title">11 Reviews</p>
@@ -213,28 +237,37 @@
             </div>
             <div class="review-all">
                 <div class="review-card">
-                    <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                    <div class="review-top">
+                        <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                        <div class="review-text-top">
+                            <p class="avatar-name">Sofia Harvetz</p>
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
                     <div class="review-text">
-                        <p class="avatar-name">Sofia Harvetz</p>
-                        <button class="rate-star">
-                            <img src="/img/icon/Star Icon.svg" alt="">
-                            <img src="/img/icon/Star Icon.svg" alt="">
-                            <img src="/img/icon/Star Icon.svg" alt="">
-                            <img src="/img/icon/Star Icon.svg" alt="">
-                            <img src="/img/icon/Star Icon.svg" alt="">
-                        </button>
                         <p class="review-text-grey">I bought it 3 weeks ago and now come back just to say “Awesome
                             Product”. I really enjoy it.
                             At
                             vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum
                             deleniti atque corrupt et quas molestias excepturi sint non provident.</p>
+                        <div class="mini-review-text">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                    <img src="/img/bacground-img/avatar2.jpg" alt="">
                     <div class="review-text">
-                        <p class="avatar-name">Sofia Harvetz</p>
+                        <p class="avatar-name">Nicolas Jensen</p>
                         <button class="rate-star">
                             <img src="/img/icon/Star Icon.svg" alt="">
                             <img src="/img/icon/Star Icon.svg" alt="">
@@ -248,12 +281,16 @@
                             vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum
                             deleniti atque corrupt et quas molestias excepturi sint non provident.</p>
+                        <div class="mini-review-text">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                    <img src="/img/bacground-img/avatar3.jpg" alt="">
                     <div class="review-text">
-                        <p class="avatar-name">Sofia Harvetz</p>
+                        <p class="avatar-name">Nicolas Jensen</p>
                         <button class="rate-star">
                             <img src="/img/icon/Star Icon.svg" alt="">
                             <img src="/img/icon/Star Icon.svg" alt="">
@@ -267,12 +304,16 @@
                             vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum
                             deleniti atque corrupt et quas molestias excepturi sint non provident.</p>
+                        <div class="mini-review-text">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                    <img src="/img/bacground-img/avatar4jpg.jpg" alt="">
                     <div class="review-text">
-                        <p class="avatar-name">Sofia Harvetz</p>
+                        <p class="avatar-name">Nicolas Jensen</p>
                         <button class="rate-star">
                             <img src="/img/icon/Star Icon.svg" alt="">
                             <img src="/img/icon/Star Icon.svg" alt="">
@@ -286,12 +327,16 @@
                             vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum
                             deleniti atque corrupt et quas molestias excepturi sint non provident.</p>
+                        <div class="mini-review-text">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <img src="/img/bacground-img/avatar_placeholder-1.svg" alt="">
+                    <img src="/img/bacground-img/avatar5.jpg" alt="">
                     <div class="review-text">
-                        <p class="avatar-name">Sofia Harvetz</p>
+                        <p class="avatar-name">Nicolas Jensen</p>
                         <button class="rate-star">
                             <img src="/img/icon/Star Icon.svg" alt="">
                             <img src="/img/icon/Star Icon.svg" alt="">
@@ -305,6 +350,10 @@
                             vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             voluptatum
                             deleniti atque corrupt et quas molestias excepturi sint non provident.</p>
+                        <div class="mini-review-text">
+                            <a href="#">Like</a>
+                            <a href="#">Reply</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -314,15 +363,15 @@
         </section>
         <section class="email">
             <div class="email-banner">
-                <img src="/img/bacground-img/emailbanner2.svg" alt="">
-                <a class="titlecatalog paragraf-1" href="#">Join Our Newsletter</a>
-                <a class="paragraf-2" href="#">Sign up for deals, new products and
-                    promotions</a>
+                <div class="email-title">
+                    <a class="titlecatalog paragraf-1" href="#">Join Our Newsletter</a>
+                    <a class="paragraf-2" href="#">Sign up for deals, new products and
+                        promotions</a>
+                </div>
                 <div class="email-form">
                     <input type="email" class="email-input" placeholder="Email address" />
                     <a href="#">Signup</a>
                 </div>
-            </div>
             </div>
         </section>
     </main>
@@ -335,18 +384,20 @@
                     <a href="#" class="footer-title-2">Gift & Decoration Store</a>
                 </div>
                 <nav class="footer-nav">
-                    <a class="footer-title-2" href="/1str.html">Home</a>
+                    <a class="footer-title-2" href="#">Home</a>
                     <a class="footer-title-2" href="#">Shop</a>
-                    <a class="footer-title-2" href="#">Product</a>
+                    <a class="footer-title-2" href="/2str.html">Product</a>
                     <a class="footer-title-2" href="#">Blog</a>
                     <a class="footer-title-2" href="#">Contact Us</a>
                 </nav>
             </div>
-            <div class="footer-bar foot-bar-all">
+            <div class="foot-bar-all">
                 <div class="footer-left-line">
                     <a href="#">Copyright © 2023 3legant. All rights reserved</a>
-                    <a class="line-fat" href="#"><span>Privacy Policy</span></a>
-                    <a class="line-fat" href="#"><span>Terms of Use</span></a>
+                    <div class="footer-line-fet-high">
+                        <a class="line-fat" href="#"><span>Privacy Policy</span></a>
+                        <a class="line-fat" href="#"><span>Terms of Use</span></a>
+                    </div>
                 </div>
                 <div class="footer-icon">
                     <a href="#"><img src="/img/icon/instagram.svg" alt=""></a>
