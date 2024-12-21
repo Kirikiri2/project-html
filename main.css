@@ -1256,6 +1256,8 @@ footer {
 
 .review-card {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
     border-bottom-style: solid;
     border-bottom-color: #E8ECEF;
     border-bottom-width: 1.8px;
@@ -1264,8 +1266,10 @@ footer {
 .review-text {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 16px;
     padding-bottom: 24px;
+    padding-left: 115px;
 }
 
 .mini-review-text {
@@ -1343,6 +1347,7 @@ footer {
 }
 
 .review-text-grey {
+    text-align: left;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1668,6 +1673,10 @@ footer {
             "c f f f f"
             "a a a a a ";
         gap: 24px;
+    }
+
+    .review-text {
+        padding-left: 0;
     }
 }
 
