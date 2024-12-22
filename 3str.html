@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document2</title>
+    <title>Shop</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,61 +64,36 @@
         </section>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner-img">
-                <img src="/img/bacground-img/Paste Image for 3.svg" alt="ioio">
-            </div>
-            <div class="banner-content">
-                <div class="bread-crop-banner">
-                    <a class="banner-home" href="#">Home<img src="/img/icon/Vector-arrow.svg" alt=""></a>
-                    <a class="black-banner-shop" href="#">Shop</a>
-                </div>
-                <h1>Shop Page</h1>
-                <p>Let’s design the place you always imagined.</p>
-            </div>
-        </section>
-
-        <section class="section-header">
-            <p class="filter-title">
-                <img src="/img/icon/filter 05.svg" alt="Filter Icon"> Filter
-            </p>
-            <div class="living-room-header">
-                <p class="living-room-title">Living Room</p>
-                <div class="living-room-sort-controls">
-                    <select class="living-room-sort-label" name="option">
-                        <option value="option1">Sort by</option>
-                        <option value="option2">All</option>
-                    </select>
-                    <div class="living-room-view-icons">
-                        <button class="living-room-icon living-room-grid-view" title="Grid View">
-                            <img src="img/icon/sfdg.svg" alt="Grid View">
-                        </button>
-                        <button class="living-room-icon living-room-list-view" title="List View">
-                            <img src="/img/icon/asdf.svg" alt="List View">
-                        </button>
-                        <button class="living-room-icon living-room-tile-view" title="Tile View">
-                            <img src="/img/icon/topbutton.svg" alt="Tile View">
-                        </button>
-                        <button class="living-room-icon living-room-tile-view" title="Tile View">
-                            <img src="/img/icon/Toolbar Selector Buttons.svg" alt="Tile View">
-                        </button>
+        <section class="banner-light">
+            <div class="banner-light-img">
+                <div class="banner-content">
+                    <div class="bread-crop-banner">
+                        <a class="banner-home" href="#">Home<img src="/img/icon/Vector-arrow.svg" alt=""></a>
+                        <a class="black-banner-shop" href="#">Shop</a>
                     </div>
+                    <h1>Shop Page</h1>
+                    <p>Let’s design the place you always imagined.</p>
                 </div>
             </div>
-        </section>
 
+        </section>
         <section class="filter-and-catalog">
             <div class="filter">
+                <p class="filter-title">
+                    <img src="/img/icon/filter 05.svg" alt="Filter Icon"> Filter
+                </p>
                 <div class="categories">
                     <p class="section-title">CATEGORIES</p>
                     <div class="categorize-options">
                         <a href="#">All Rooms</a>
-                        <a href="#" class="active">Living Room</a>
+                        <a href="#" class="Shopnow categorize-options-a">Living Room</a>
                         <a href="#">Bedroom</a>
                         <a href="#">Kitchen</a>
                         <a href="#">Bathroom</a>
                         <a href="#">Dinning</a>
                         <a href="#">Outdoor</a>
+                        <a href="#">Kitchen</a>
+                        <a href="#">Bathroom</a>
                     </div>
                 </div>
                 <div class="price-catalog">
@@ -152,6 +127,44 @@
                 </div>
             </div>
             <div class="catalog-with-button">
+                <div class="catalog-with-top">
+                    <div class="filter-hide">
+                        <p class="filter-title">
+                            <img src="/img/icon/filter 05.svg" alt="Filter Icon"> Filter
+                        </p>
+                        <div class="filter-hide-button">
+                            <button class="living-room-icon living-room-tile-view" title="Tile View">
+                                <img src="/img/icon/topbutton.svg" alt="Tile View">
+                            </button>
+                            <button class="living-room-icon living-room-tile-view" title="Tile View">
+                                <img src="/img/icon/active-filter-img.svg" alt="Tile View">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="living-room-header">
+                        <p class="living-room-title">Living Room</p>
+                        <div class="living-room-sort-controls">
+                            <select class="living-room-sort-label" name="option">
+                                <option value="option1">Sort by</option>
+                                <option value="option2">All</option>
+                            </select>
+                            <div class="living-room-view-icons">
+                                <button class="living-room-icon living-room-grid-view" title="Grid View">
+                                    <img src="img/icon/sfdg.svg" alt="Grid View">
+                                </button>
+                                <button class="living-room-icon living-room-list-view" title="List View">
+                                    <img src="/img/icon/asdf.svg" alt="List View">
+                                </button>
+                                <button class="living-room-icon living-room-tile-view" title="Tile View">
+                                    <img src="/img/icon/topbutton.svg" alt="Tile View">
+                                </button>
+                                <button class="living-room-icon living-room-tile-view" title="Tile View">
+                                    <img src="/img/icon/Toolbar Selector Buttons.svg" alt="Tile View">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="catalod-big">
                     <div class="catalog-card-with-text">
                         <div class="catalog-img">
@@ -160,7 +173,7 @@
                                 <button class="new">NEW</button>
                                 <button class="new sale">-50%</button>
                             </div>
-                            <button class="hover-buttons-1">Add to cart</button>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
                             <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
                         </div>
                         <div class="catalog-text">
@@ -180,12 +193,12 @@
                     </div>
                     <div class="catalog-card-with-text">
                         <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/sofa.svg" alt="">
+                            <img class="images" src="/img/bacground-img/card-2.jpg" alt="">
                             <div class="buttons-line">
                                 <button class="new">NEW</button>
                                 <button class="new sale">-50%</button>
                             </div>
-                            <button class="hover-buttons-1">Add to cart</button>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
                             <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
                         </div>
                         <div class="catalog-text">
@@ -196,11 +209,121 @@
                                 <img src="/img/icon/Star Icon.svg" alt="">
                                 <img src="/img/icon/Star Icon.svg" alt="">
                             </button>
-                            <a href="#" class="catalog-text-name">Loveseat Sofa</a>
+                            <a href="#" class="catalog-text-name">Luxury Sofa</a>
                             <div class="prices">
-                                <a href="#" class="price-now">$199.00</a>
-                                <a href="#" class="price-befor">$400.00</a>
+                                <a href="#" class="price-now">$299.00</a>
+                                <a href="#" class="price-befor">$500.00</a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="catalog-card-with-text">
+                        <div class="catalog-img">
+                            <img class="images" src="/img/bacground-img/plastic-lamp.svg" alt="">
+                            <div class="buttons-line">
+                                <button class="new">NEW</button>
+                                <button class="new sale">-50%</button>
+                            </div>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
+                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
+                        </div>
+                        <div class="catalog-text">
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-text-name">Table Lamp</a>
+                            <a href="#" class="price-now">$19.00</a>
+                        </div>
+                    </div>
+                    <div class="catalog-card-with-text">
+                        <div class="catalog-img">
+                            <img class="images" src="/img/bacground-img/card-3.jpg" alt="">
+                            <div class="buttons-line">
+                                <button class="new">NEW</button>
+                                <button class="new sale">-50%</button>
+                            </div>
+                            <button class="hover-buttons- third-str1">Add to cart</button>
+                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
+                        </div>
+                        <div class="catalog-text">
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-text-name">White Drawer unit</a>
+                            <a href="#" class="price-now">$89.99</a>
+                        </div>
+                    </div>
+                    <div class="catalog-card-with-text">
+                        <div class="catalog-img">
+                            <img class="images" src="/img/bacground-img/card-4.jpg" alt="">
+                            <div class="buttons-line">
+                                <button class="new">NEW</button>
+                                <button class="new sale">-50%</button>
+                            </div>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
+                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
+                        </div>
+                        <div class="catalog-text">
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-text-name">Black Tray table</a>
+                            <a href="#" class="price-now">$19.99</a>
+                        </div>
+                    </div>
+                    <div class="catalog-card-with-text">
+                        <div class="catalog-img">
+                            <img class="images" src="/img/bacground-img/card-5.jpg" alt="">
+                            <div class="buttons-line">
+                                <button class="new">NEW</button>
+                                <button class="new sale">-50%</button>
+                            </div>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
+                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
+                        </div>
+                        <div class="catalog-text">
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-text-name">Black Tray table</a>
+                            <a href="#" class="price-now">$39.00</a>
+                        </div>
+                    </div>
+                    <div class="catalog-card-with-text">
+                        <div class="catalog-img">
+                            <img class="images" src="/img/bacground-img/card-6.jpg" alt="">
+                            <div class="buttons-line">
+                                <button class="new">NEW</button>
+                                <button class="new sale">-50%</button>
+                            </div>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
+                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
+                        </div>
+                        <div class="catalog-text">
+                            <button class="rate-star">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                                <img src="/img/icon/Star Icon.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-text-name">Light Beige Pillow</a>
+                            <a href="#" class="price-now">$3.99</a>
                         </div>
                     </div>
                     <div class="catalog-card-with-text">
@@ -210,7 +333,7 @@
                                 <button class="new">NEW</button>
                                 <button class="new sale">-50%</button>
                             </div>
-                            <button class="hover-buttons-1">Add to cart</button>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
                             <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
                         </div>
                         <div class="catalog-text">
@@ -227,12 +350,12 @@
                     </div>
                     <div class="catalog-card-with-text">
                         <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
+                            <img class="images" src="/img/bacground-img/bag.svg" alt="">
                             <div class="buttons-line">
                                 <button class="new">NEW</button>
                                 <button class="new sale">-50%</button>
                             </div>
-                            <button class="hover-buttons-1">Add to cart</button>
+                            <button class="hover-buttons-1 third-str">Add to cart</button>
                             <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
                         </div>
                         <div class="catalog-text">
@@ -244,117 +367,7 @@
                                 <img src="/img/icon/Star Icon.svg" alt="">
                             </button>
                             <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
-                        </div>
-                    </div>
-                    <div class="catalog-card-with-text">
-                        <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
-                            <div class="buttons-line">
-                                <button class="new">NEW</button>
-                                <button class="new sale">-50%</button>
-                            </div>
-                            <button class="hover-buttons-1">Add to cart</button>
-                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
-                        </div>
-                        <div class="catalog-text">
-                            <button class="rate-star">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                            </button>
-                            <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
-                        </div>
-                    </div>
-                    <div class="catalog-card-with-text">
-                        <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
-                            <div class="buttons-line">
-                                <button class="new">NEW</button>
-                                <button class="new sale">-50%</button>
-                            </div>
-                            <button class="hover-buttons-1">Add to cart</button>
-                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
-                        </div>
-                        <div class="catalog-text">
-                            <button class="rate-star">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                            </button>
-                            <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
-                        </div>
-                    </div>
-                    <div class="catalog-card-with-text">
-                        <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
-                            <div class="buttons-line">
-                                <button class="new">NEW</button>
-                                <button class="new sale">-50%</button>
-                            </div>
-                            <button class="hover-buttons-1">Add to cart</button>
-                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
-                        </div>
-                        <div class="catalog-text">
-                            <button class="rate-star">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                            </button>
-                            <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
-                        </div>
-                    </div>
-                    <div class="catalog-card-with-text">
-                        <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
-                            <div class="buttons-line">
-                                <button class="new">NEW</button>
-                                <button class="new sale">-50%</button>
-                            </div>
-                            <button class="hover-buttons-1">Add to cart</button>
-                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
-                        </div>
-                        <div class="catalog-text">
-                            <button class="rate-star">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                            </button>
-                            <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
-                        </div>
-                    </div>
-                    <div class="catalog-card-with-text">
-                        <div class="catalog-img">
-                            <img class="images" src="/img/bacground-img/lamp.svg" alt="">
-                            <div class="buttons-line">
-                                <button class="new">NEW</button>
-                                <button class="new sale">-50%</button>
-                            </div>
-                            <button class="hover-buttons-1">Add to cart</button>
-                            <button class="hover-buttons-2"><img src="/img/icon/add to ❤️ wishlist.svg" alt=""></button>
-                        </div>
-                        <div class="catalog-text">
-                            <button class="rate-star">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                                <img src="/img/icon/Star Icon.svg" alt="">
-                            </button>
-                            <a href="#" class="catalog-text-name">Table Lamp</a>
-                            <a href="#" class="price-now">$24.99</a>
+                            <a href="#" class="price-now">$9.99</a>
                         </div>
                     </div>
                 </div>

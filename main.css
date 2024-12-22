@@ -249,7 +249,8 @@ body {
     align-items: center;
 }
 
-.Shopnow {
+.Shopnow,
+.categorize-options .Shopnow {
     font-family: "Inter", sans-serif;
     color: #141718;
     text-decoration: underline;
@@ -405,6 +406,13 @@ body {
     right: 5%;
     background-color: none;
     border: none;
+}
+
+.third-str {
+    padding: 9px 75px;
+    border-radius: 8px;
+    bottom: 5%;
+    left: 8%;
 }
 
 .catalog-img:hover {
@@ -759,8 +767,6 @@ footer {
     gap: 24px;
 }
 
-
-
 /*начало второй страницы*/
 
 .bread-crop {
@@ -853,11 +859,6 @@ footer {
     align-items: center;
     gap: 24px;
 }
-
-/*.mini-img img {
-    width: 100%;
-    max-width: 100%;
-}*/
 
 .card-img img {
     width: 100%;
@@ -1077,7 +1078,6 @@ footer {
     border-width: 1.8px;
     border-radius: 8px;
     grid-area: f;
-    transition: background-color 0.3s ease;
 }
 
 .wish:hover {
@@ -1382,10 +1382,15 @@ footer {
     cursor: pointer;
 }
 
-.banner {
-    position: relative;
-    text-align: center;
-    color: #000;
+.banner-light {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.banner-light-img {
+    background-image: url(/img/bacground-img/Paste\ Image\ for\ 3.svg);
+    background-size: cover;
+    padding: 100px 10px;
 }
 
 .banner-img {
@@ -1402,10 +1407,12 @@ footer {
 }
 
 .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
 }
 
 .bread-crop-banner {
@@ -1434,7 +1441,6 @@ footer {
 .banner-content h1 {
     font-size: 54px;
     line-height: 58px;
-    margin: 24px auto;
     font-weight: 500;
 }
 
@@ -1448,8 +1454,10 @@ footer {
 .filter-and-catalog {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     max-width: 1120px;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
 .catalod-big {
@@ -1459,9 +1467,9 @@ footer {
 }
 
 .filter {
-    max-width: 250px;
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 .section-header {
@@ -1477,9 +1485,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
-    margin: 0;
 }
 
 .filter-title img {
@@ -1491,16 +1500,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 1;
-    margin: 0;
-    margin-left: 217px;
+    margin-bottom: 48px;
 }
 
 .living-room-title {
     font-size: 20px;
+    line-height: 32px;
     font-weight: 600;
-    color: #333;
-    margin: 0;
+    color: #141718;
 }
 
 .living-room-sort-controls {
@@ -1539,41 +1546,51 @@ footer {
 }
 
 .section-title {
-    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 600;
-    color: #000;
-    margin-bottom: 8px;
+    color: #141718;
 }
 
-.categorize-options a {
-    display: block;
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.categorize-options a,
+.categorize-options-a,
+.price-options label {
+    text-wrap: nowrap;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
-    color: #666;
+    line-height: 22px;
+    font-weight: 600;
+    color: #6C7275;
     text-decoration: none;
-    padding: 4px 0;
-    transition: all 0.3s ease;
 }
 
-.categorize-options a:hover {
-    color: #000;
-    text-decoration: underline;
+.price-catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.categorize-options a.active {
-    color: #000;
-    font-weight: bold;
-    text-decoration: underline;
+.price-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .price-options label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
     cursor: pointer;
 }
 
-.price-options input[type="checkbox"] {
+.price-options input {
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -1582,28 +1599,53 @@ footer {
     border-radius: 4px;
 }
 
-.price-options input[type="checkbox"]:checked {
-    background-color: #000;
+.price-options input:checked {
+    background-color: #141718;
 }
 
 .categorize-options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    height: 228px;
-    overflow-y: auto;
-    padding-right: 147px;
+    gap: 12px;
+    height: 226px;
+    overflow-y: scroll;
+    padding-right: 148px;
+    padding-bottom: 4px;
 }
 
-.price-options {
-    max-height: 200px;
-    overflow-y: auto;
-    padding-right: 10px;
+.categorize-options::-webkit-scrollbar-button {
+    display: none;
+}
+
+.categorize-options::-webkit-scrollbar-track {
+    background-color: #EAEAEA;
+}
+
+.categorize-options::-webkit-scrollbar-thumb {
+    background-color: #6C7275;
+    border-radius: 20px;
 }
 
 .catalog-with-button {
     display: flex;
     flex-direction: column;
+}
+
+.filter-hide {
+    display: none;
+    justify-content: space-between;
+    padding: 15px 0;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #E8ECEF;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: #E8ECEF;
+    border-top-width: 2px;
+}
+
+.filter-hide-button {
+    display: flex;
 }
 
 .Show-more {
@@ -1613,18 +1655,21 @@ footer {
 }
 
 .Show-more button {
-    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    padding: 6px 40px;
+    font-size: 16px;
+    border: 1px solid #141718;
+    border-radius: 80px;
     background-color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .Show-more button:hover {
     background-color: #f0f0f0;
-    border-color: #bbb;
+    border-color: #141718;
 }
 
 @media(max-width: 1160px) {
@@ -1645,8 +1690,9 @@ footer {
     .review,
     .product-card,
     .bread-crop,
-    .section-header,
-    .filter-and-catalog footer {
+    .filter-and-catalog,
+    .banner-light,
+    footer {
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -1658,6 +1704,19 @@ footer {
 
     .product-card {
         gap: 20px;
+    }
+
+    .categorize-options {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1120px) and (min-width:930px) {
+    .third-str {
+        padding: 9px 44px;
+        border-radius: 8px;
+        bottom: 5%;
+        left: 10%;
     }
 }
 
@@ -1673,6 +1732,10 @@ footer {
 
     .button-for-choise {
         max-width: 500px;
+    }
+
+    .banner-light-img {
+        background-position-x: 20%;
     }
 
 }
@@ -1741,6 +1804,20 @@ footer {
         gap: 0;
     }
 
+    .banner-content {
+        top: 40%;
+        gap: 16px;
+    }
+
+}
+
+@media ((max-width: 930px) and (min-width:770px)) {
+    .third-str {
+        padding: 9px 24px;
+        border-radius: 8px;
+        bottom: 5%;
+        left: 10%;
+    }
 }
 
 @media (max-width:880px) {
@@ -1805,6 +1882,48 @@ footer {
         align-items: center;
         justify-content: flex-end;
     }
+
+    .banner-content h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .filter-hide {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .living-room-view-icons {
+        display: none;
+    }
+
+    .catalod-big {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 8px;
+    }
+
+    .filter-and-catalog {
+        display: block
+    }
+}
+
+@media (max-width: 750px) and (min-width:620px) {
+    .third-str {
+        padding: 9px 75px;
+        border-radius: 8px;
+        bottom: 5%;
+        left: 10%;
+    }
 }
 
 
@@ -1835,10 +1954,16 @@ footer {
         padding-right: 15px;
     }
 
+    .banner-light-img {
+        padding-top: 78px;
+        padding-bottom: 78px;
+        background-position-x: 50%;
+    }
 
 }
 
-@media (max-width:600px) {
+@media (max-width:600px),
+((max-width: 600px) and (min-width:550px)) {
     .frame {
         display: flex;
         flex-direction: column;
@@ -1864,6 +1989,13 @@ footer {
     .mini-img {
         gap: 8px;
     }
+
+    .third-str {
+        padding: 9px 54px;
+        border-radius: 8px;
+        bottom: 5%;
+        left: 10%;
+    }
 }
 
 @media (max-width:550px) {
@@ -1875,6 +2007,10 @@ footer {
     .article,
     .catalog,
     .advice,
+    .product-card,
+    .bread-crop,
+    .filter-and-catalog,
+    .banner-light,
     footer {
         padding-left: 15px;
         padding-right: 15px;
@@ -1895,6 +2031,16 @@ footer {
 
     .review-text {
         padding-left: 0;
+    }
+
+    .catalod-big {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px 0;
+    }
+
+    .filter-and-catalog {
+        display: block;
     }
 }
 
