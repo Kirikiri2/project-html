@@ -24,6 +24,7 @@ Figma макет - https://www.figma.com/design/N2mezMI3xf78MDX7C4zmuC/3legant-E
 ---
 
 ## Демо
+![img/preview/Screen1.png](img/preview/Screen1.png)
 
 Проект доступен на GitHub Pages:
 
